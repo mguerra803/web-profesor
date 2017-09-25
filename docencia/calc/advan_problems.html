@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ángel Plaza de la Hoz</title>
+		<link rel="icon" href="../../imagenes/icono_dma.png">
+		<link rel="stylesheet" href="../../css/redmond/jquery-ui-1.8.9.custom.css" type="text/css" />
+		<link rel="stylesheet" href="../../estilos.css" type="text/css" />
+
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="../../js/jquery-ui-en.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../../css/bootstrap.css">
+
+	</head>
+
+	<script>
+		function openModal() {
+			document.getElementById('myModal').style.display = "block";
+		}
+
+		function closeModal() {
+			document.getElementById('myModal').style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			var captionText = document.getElementById("caption");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+	</script>
+
+	<body>
+		<!-- Barra de navegación -->
+		<div id="masthead">
+			<nav class="navbar">
+				<div class="container-fluid">
+					<div class="navbar-header">
+
+						<div class="col-lg-12">
+							<h3>ÁNGEL PLAZA DE LA HOZ</h3>
+						</div>
+
+						<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+					</div>
+					<div id="navbarCollapse" class="collapse navbar-collapse nav-text">
+						<ul class="nav navbar-nav navbar-right ">
+							<li>
+								<a href="../../en_index.html">Home</a>
+							</li>
+
+							<li>
+								<a href="../../teaching.html">Teaching</a>
+							</li>
+
+							<li>
+								<a href="../../research.html">Research</a>
+							</li>
+
+							<li>
+								<a href="../../links.html">Links</a>
+							</li>
+
+							<li>
+								<a href="../../contact.html">Contact</a>
+							</li>
+
+							<li>
+								<a href="problem_avanzados.html"><img src="../../imagenes/span0002.png" alt="Español" title="Español" border="0" height="17" width="25" /></a>
+							</li>
+
+							<li>
+								<a href="advan_problems.html"><img src="../../imagenes/unkg0001.png" alt="English" title="English" border="0" height="17" width="25" /></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- Barra de navegación -->
+
+
+		<div class="container-fluid">
+			<section class="row">
+				<div class="col-lg-12">
+					<br />
+					<div class="col-lg-2">
+						<div id="navBar">
+							<div id="sectionLinks">
+								<h4 class="title">Caculus</h4>
+								<ul>
+									<li>
+										<a href="syllabus.html">Syllabus</a>
+									</li>
+
+									<li>
+										<a href="problems.html">Problems</a>
+									</li>
+
+									<li>
+										<a href="exams.html">Exam</a>
+									</li>
+
+									<li>
+										<a href="bibliography.html">Bibliography</a>
+									</li>
+
+									<li>
+										<a href="class_log16.html">Class log course 2016-2017</a>
+									</li>
+
+									<li>
+										<a href="advan_problems.html">Some advanced problems</a>
+									</li>
+								</ul>
+								<h4 class="title">Advanced Mathematics</h4>
+								<ul>
+									<li>
+
+									</li>
+								</ul>
+								<h4 class="title">Old Subjects</h4>
+								<ul>
+									<li>
+										<a href="../../old_subjects.html">Old Subjects</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-8 blue_block text">
+
+						<div class="row">
+							<div class=column>
+
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/1prob.png" onclick="openModal();currentSlide(1)">
+										<div class="desc"><a href="avanzados/fibonacci1.pdf">Algunos problemas de "The Fibonacci Quarterly"</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/2prob.png" onclick="openModal();currentSlide(2)">
+										<div class="desc"><a href="avanzados/2005-S-solution3.pdf">Producto</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/4prob.png" onclick="openModal();currentSlide(3)">
+										<div class="desc"><a href="avanzados/2006-S-solution14.pdf">n-2 ceros reales</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/5prob.png" onclick="openModal();currentSlide(4)">
+										<div class="desc"><a href="avanzados/2007-F-solution11.pdf">Sumatorio</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/6prob.png" onclick="openModal();currentSlide(5)">
+										<div class="desc"><a href="avanzados/2007-F-solution3.pdf">Entero</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/7prob.png" onclick="openModal();currentSlide(6)">
+										<div class="desc"><a href="avanzados/2007-S-solution9.pdf">Derivada</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/8prob.png" onclick="openModal();currentSlide(7)">
+										<div class="desc"><a href="avanzados/2007-S-solution3.pdf">2007</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/9prob.png" onclick="openModal();currentSlide(8)">
+										<div class="desc"><a href="avanzados/2007-F-solution10.pdf">Desigualdad</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/10prob.png" onclick="openModal();currentSlide(9)">
+										<div class="desc"><a href="avanzados/2008-S-solution11.pdf">Funciones diferenciables</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/11prob.png" onclick="openModal();currentSlide(10)">
+										<div class="desc"><a href="avanzados/2007-S-solution5.pdf">Serie</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/12prob.png" onclick="openModal();currentSlide(11)">
+										<div class="desc"><a href="avanzados/2007-F-solution6.pdf">n! y número e</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/13prob.png" onclick="openModal();currentSlide(12)">
+										<div class="desc"><a href="avanzados/2001-F-solution11.pdf">Serie de números complejos</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/14prob.png" onclick="openModal();currentSlide(13)">
+										<div class="desc"><a href="avanzados/2004-F-solution14.pdf">Centroide</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/15prob.png" onclick="openModal();currentSlide(14)">
+										<div class="desc"><a href="avanzados/2005-S-solution1.pdf">Probabilidad</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/16prob.png" onclick="openModal();currentSlide(15)">
+										<div class="desc"><a href="avanzados/2005-S-solution5.pdf">Sucesión periódica</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/17prob.png" onclick="openModal();currentSlide(16)">
+										<div class="desc"><a href="avanzados/2005-S-solution6.pdf">Cuadrilátero</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/18prob.png" onclick="openModal();currentSlide(17)">
+										<div class="desc"><a href="avanzados/2005-S-solution7.pdf">Desigualdad con polinomios</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/19prob.png" onclick="openModal();currentSlide(18)">
+										<div class="desc"><a href="avanzados/2005-S-solution9.pdf">Límite cero</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/20prob.png" onclick="openModal();currentSlide(19)">
+										<div class="desc"><a href="avanzados/2005-S-solution12.pdf">Producto infinito</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/21prob.png" onclick="openModal();currentSlide(20)">
+										<div class="desc"><a href="avanzados/2007-F-solution1.pdf">Serie</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/22prob.png" onclick="openModal();currentSlide(21)">
+										<div class="desc"><a href="avanzados/2007-F-solution4.pdf">Polinomios 2007</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/23prob.png" onclick="openModal();currentSlide(22)">
+										<div class="desc"><a href="avanzados/mm_prob1769.pdf">Snake oil method</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/24prob.png" onclick="openModal();currentSlide(23)">
+										<div class="desc"><a href="avanzados/2008-F-solution1.pdf">Límite de una integral n-dimensional</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/25prob.png" onclick="openModal();currentSlide(24)">
+										<div class="desc"><a href="avanzados/identidad_combinatoria.pdf">Identidad combinatoria</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/26prob.png" onclick="openModal();currentSlide(25)">
+										<div class="desc"><a href="avanzados/amm_11290.pdf">A Variant Intermediate Value</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/27prob.png" onclick="openModal();currentSlide(26)">
+										<div class="desc"><a href="avanzados/An_infinite_product.pdf">An Infinite Product</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/28prob.png" onclick="openModal();currentSlide(27)">
+										<div class="desc"><a href="avanzados/An_Inequality_for_Triangles.pdf">An Inequality for Triangles</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/29prob.png" onclick="openModal();currentSlide(28)">
+										<div class="desc"><a href="avanzados/temperature.pdf">Temperature</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/30prob.png" onclick="openModal();currentSlide(29)">
+										<div class="desc"><a href="avanzados/5046.pdf">Two sums of Lucas numbers</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/31prob.png" onclick="openModal();currentSlide(30)">
+										<div class="desc"><a href="avanzados/amm_11281.pdf">Counting Permutations With Two Displacement Values</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/32prob.png" onclick="openModal();currentSlide(31)">
+										<div class="desc"><a href="avanzados/amm_11288.pdf">A Polynomial Identity</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/33prob.png" onclick="openModal();currentSlide(32)">
+										<div class="desc"><a href="avanzados/amm_11307.pdf">Divisibility of a Central Binomial Sun</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/34prob.png" onclick="openModal();currentSlide(33)">
+										<div class="desc"><a href="avanzados/cmj_879.pdf">Roots and Coefficients of a Quartic Function</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/35prob.png" onclick="openModal();currentSlide(34)">
+										<div class="desc"><a href="avanzados/cmj_881.pdf">Representations of a generating function</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/36prob.png" onclick="openModal();currentSlide(35)">
+										<div class="desc"><a href="avanzados/cmj_883.pdf">Two closely related definite integrals</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/37prob.png" onclick="openModal();currentSlide(36)">
+										<div class="desc"><a href="avanzados/mm_2002.pdf">An inequality</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/38prob.png" onclick="openModal();currentSlide(37)">
+										<div class="desc"><a href="avanzados/mm_p2005.pdf">A comparison test</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/39prob.png" onclick="openModal();currentSlide(38)">
+										<div class="desc"><a href="avanzados/b_1044.pdf">Lucas and Fibonnacci Squares</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/40prob.png" onclick="openModal();currentSlide(39)">
+										<div class="desc"><a href="avanzados/b_1045.pdf">Sum of a Product</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/41prob.png" onclick="openModal();currentSlide(40)">
+										<div class="desc"><a href="avanzados/cmj_887.pdf">A sum involving odd roots of unity</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/42prob.png" onclick="openModal();currentSlide(41)">
+										<div class="desc"><a href="avanzados/cmj_888.pdf">The limit of a Riemann sum</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/43prob.png" onclick="openModal();currentSlide(42)">
+										<div class="desc"><a href="avanzados/amm_11333.pdf">Baking a Pi with Factorials</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/44prob.png" onclick="openModal();currentSlide(43)">
+										<div class="desc"><a href="avanzados/2009solution9.pdf">Polynomials and Exponential Function</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/45prob.png" onclick="openModal();currentSlide(44)">
+										<div class="desc"><a href="avanzados/pwo_fall09_sol10.pdf">No Straight Line Normal to Hyperbolic Functions</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/46prob.png" onclick="openModal();currentSlide(45)">
+										<div class="desc"><a href="avanzados/solmm1806.pdf">An ellipsoid and a plane</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/47prob.png" onclick="openModal();currentSlide(46)">
+										<div class="desc"><a href="avanzados/amm11343.pdf">The Number of Balanced Senates from n States</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/48prob.png" onclick="openModal();currentSlide(47)">
+										<div class="desc"><a href="avanzados/5060.pdf">An Intermediate Point</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/49prob.png" onclick="openModal();currentSlide(48)">
+										<div class="desc"><a href="avanzados/cmj893.pdf">An infintie sum of a function with its Taylor polynomial</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/50prob.png" onclick="openModal();currentSlide(49)">
+										<div class="desc"><a href="avanzados/amm11356.pdf">A Combinatory Identity from Arcsin</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/51prob.png" onclick="openModal();currentSlide(50)">
+										<div class="desc"><a href="avanzados/mm1811.pdf">Calculating the Wiener index</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/52prob.png" onclick="openModal();currentSlide(51)">
+										<div class="desc"><a href="avanzados/cmj898.pdf">And inequality with definite integrals of a convex function</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/53prob.png" onclick="openModal();currentSlide(52)">
+										<div class="desc"><a href="avanzados/amm11381.pdf">An Infinite Product for the Exponential</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/54prob.png" onclick="openModal();currentSlide(53)">
+										<div class="desc"><a href="avanzados/amm11383.pdf">Can You See the Telescope</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/55prob.png" onclick="openModal();currentSlide(54)">
+										<div class="desc"><a href="avanzados/amm11369.pdf">And Exponential Inequality</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/56prob.png" onclick="openModal();currentSlide(55)">
+										<div class="desc"><a href="avanzados/H668.pdf">Some kth order Fibonacci Limits</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/57prob.png" onclick="openModal();currentSlide(56)">
+										<div class="desc"><a href="avanzados/amm11402.pdf">Squares On Graphs</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/58prob.png" onclick="openModal();currentSlide(57)">
+										<div class="desc"><a href="avanzados/mm1824.pdf">An Intermediate Value Theorem conclusion</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/59prob.png" onclick="openModal();currentSlide(58)">
+										<div class="desc"><a href="avanzados/TottenM5.pdf">Logarithmic Diofantic equation</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/60prob.png" onclick="openModal();currentSlide(59)">
+										<div class="desc"><a href="avanzados/amm11418.pdf">A Definite Hyperbolic</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/61prob.png" onclick="openModal();currentSlide(60)">
+										<div class="desc"><a href="avanzados/amm11423.pdf">A Lobachevsky Integral</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/62prob.png" onclick="openModal();currentSlide(61)">
+										<div class="desc"><a href="avanzados/B1051.pdf">A Quartic Inequality</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/63prob.png" onclick="openModal();currentSlide(62)">
+										<div class="desc"><a href="avanzados/B1055.pdf">Diaphontine Equation But Fibonacci Solutions</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/64prob.png" onclick="openModal();currentSlide(63)">
+										<div class="desc"><a href="avanzados/cmj906.pdf">The Gamma function and an infinite product</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/65prob.png" onclick="openModal();currentSlide(64)">
+										<div class="desc"><a href="avanzados/cmj907.pdf">An infinite sum with de Pell-Lucas numbers</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/66prob.png" onclick="openModal();currentSlide(65)">
+										<div class="desc"><a href="avanzados/amm11384.pdf">Convergence of a Prime-denominated Series</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/67prob.png" onclick="openModal();currentSlide(66)">
+										<div class="desc"><a href="avanzados/mm1826.pdf">Counting block fountains of coins</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/68prob.png" onclick="openModal();currentSlide(67)">
+										<div class="desc"><a href="avanzados/mm1827.pdf">The row sum divides the determinant</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/69prob.png" onclick="openModal();currentSlide(68)">
+										<div class="desc"><a href="avanzados/mm1828.pdf">A Stirling product</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/70prob.png" onclick="openModal();currentSlide(69)">
+										<div class="desc"><a href="avanzados/mm1829.pdf">An inequality for the excircles of a triangle</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/71prob.png" onclick="openModal();currentSlide(70)">
+										<div class="desc"><a href="avanzados/B1058.pdf">Two Identities for Quartic Fibo. and Lucas Numbers</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/72prob.png" onclick="openModal();currentSlide(71)">
+										<div class="desc"><a href="avanzados/POW7_fall10.pdf">Product-sum inequality</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/73prob.png" onclick="openModal();currentSlide(72)">
+										<div class="desc"><a href="avanzados/Problema191.pdf">Una serie</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/74prob.png" onclick="openModal();currentSlide(73)">
+										<div class="desc"><a href="avanzados/solpow13_fall10.pdf">f vanishes identically</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/75prob.png" onclick="openModal();currentSlide(74)">
+										<div class="desc"><a href="avanzados/s2010-1a.pdf">A mean value formula</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/76prob.png" onclick="openModal();currentSlide(75)">
+										<div class="desc"><a href="avanzados/cmj916.pdf">A definite integral and the Glaisher-Kinkelin constant</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/77prob.png" onclick="openModal();currentSlide(76)">
+										<div class="desc"><a href="avanzados/B1061.pdf">Sum of Products</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/78prob.png" onclick="openModal();currentSlide(77)">
+										<div class="desc"><a href="avanzados/B1062.pdf">A Lot of Sums!</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/79prob.png" onclick="openModal();currentSlide(78)">
+										<div class="desc"><a href="avanzados/B1063.pdf">Another Sum and a Product</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/80prob.png" onclick="openModal();currentSlide(79)">
+										<div class="desc"><a href="avanzados/B1064.pdf">Generalized Fibonacci Polynomials... Again!</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/81prob.png" onclick="openModal();currentSlide(80)">
+										<div class="desc"><a href="avanzados/B1065.pdf">A Sum of Pell Numbers</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/82prob.png" onclick="openModal();currentSlide(81)">
+										<div class="desc"><a href="avanzados/AMM_11441.pdf">Triangles in a subdivided Polygon</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/83prob.png" onclick="openModal();currentSlide(82)">
+										<div class="desc"><a href="avanzados/AMM_11447.pdf">An Integral with Fractional Parts</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/84prob.png" onclick="openModal();currentSlide(83)">
+										<div class="desc"><a href="avanzados/AMM_11456.pdf">Asymptotycs of a Product</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/85prob.png" onclick="openModal();currentSlide(84)">
+										<div class="desc"><a href="avanzados/amm11403.pdf">Explaining of a Polynomial</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/86prob.png" onclick="openModal();currentSlide(85)">
+										<div class="desc"><a href="avanzados/cmj923.pdf">Constructing a sequence satisfying certain properties</a></div>
+									</div>
+								</div>
+								<div class="responsive">
+									<div class="gallery">
+										<img src="imagenes/87prob.png" onclick="openModal();currentSlide(86)">
+										<div class="desc"><a href="avanzados/cmj925.pdf">Conditions for f''(c) = 0 with c in (0, 1)</a></div>
+									</div>
+								</div>
+
+
+
+							</div>
+						</div>
+
+						<div id="myModal" class="modal">
+							<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal-content">
+
+								<div class="mySlides">
+									<div class="numbertext">1 / 86</div>
+									<img src="imagenes/1prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">2 / 86</div>
+									<img src="imagenes/2prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">3 / 86</div>
+									<img src="imagenes/4prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">4 / 86</div>
+									<img src="imagenes/5prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">5 / 86</div>
+									<img src="imagenes/6prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">6 / 86</div>
+									<img src="imagenes/7prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">7 / 86</div>
+									<img src="imagenes/8prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">8 / 86</div>
+									<img src="imagenes/9prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">9 / 86</div>
+									<img src="imagenes/10prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">10 / 86</div>
+									<img src="imagenes/11prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">11 / 86</div>
+									<img src="imagenes/12prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">12 / 86</div>
+									<img src="imagenes/13prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">13 / 86</div>
+									<img src="imagenes/14prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">14 / 86</div>
+									<img src="imagenes/15prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">15 / 86</div>
+									<img src="imagenes/16prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">16 / 86</div>
+									<img src="imagenes/17prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">17 / 86</div>
+									<img src="imagenes/18prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">18 / 86</div>
+									<img src="imagenes/19prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">19 / 86</div>
+									<img src="imagenes/20prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">20 / 86</div>
+									<img src="imagenes/21prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">21 / 86</div>
+									<img src="imagenes/22prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">22 / 86</div>
+									<img src="imagenes/23prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">23 / 86</div>
+									<img src="imagenes/24prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">24 / 86</div>
+									<img src="imagenes/25prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">25 / 86</div>
+									<img src="imagenes/26prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">26 / 86</div>
+									<img src="imagenes/27prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">27 / 86</div>
+									<img src="imagenes/28prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">28 / 86</div>
+									<img src="imagenes/29prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">29 / 86</div>
+									<img src="imagenes/30prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">30 / 86</div>
+									<img src="imagenes/31prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">31 / 86</div>
+									<img src="imagenes/32prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">32 / 86</div>
+									<img src="imagenes/33prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">33 / 86</div>
+									<img src="imagenes/34prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">34 / 86</div>
+									<img src="imagenes/35prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">35 / 86</div>
+									<img src="imagenes/36prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">36 / 86</div>
+									<img src="imagenes/37prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">37 / 86</div>
+									<img src="imagenes/38prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">38 / 86</div>
+									<img src="imagenes/39prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">39 / 86</div>
+									<img src="imagenes/40prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">40 / 86</div>
+									<img src="imagenes/41prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">41 / 86</div>
+									<img src="imagenes/42prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">42 / 86</div>
+									<img src="imagenes/43prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">43 / 86</div>
+									<img src="imagenes/44prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">44 / 86</div>
+									<img src="imagenes/45prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">45 / 86</div>
+									<img src="imagenes/46prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">46 / 86</div>
+									<img src="imagenes/47prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">47 / 86</div>
+									<img src="imagenes/48prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">48 / 86</div>
+									<img src="imagenes/49prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">49 / 86</div>
+									<img src="imagenes/50prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">50 / 86</div>
+									<img src="imagenes/51prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">51 / 86</div>
+									<img src="imagenes/52prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">52 / 86</div>
+									<img src="imagenes/53prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">53 / 86</div>
+									<img src="imagenes/54prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">54 / 86</div>
+									<img src="imagenes/55prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">55 / 86</div>
+									<img src="imagenes/56prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">56 / 86</div>
+									<img src="imagenes/57prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">57 / 86</div>
+									<img src="imagenes/58prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">58 / 86</div>
+									<img src="imagenes/59prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">59 / 86</div>
+									<img src="imagenes/60prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">60 / 86</div>
+									<img src="imagenes/61prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">61 / 86</div>
+									<img src="imagenes/62prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">62 / 86</div>
+									<img src="imagenes/63prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">63 / 86</div>
+									<img src="imagenes/64prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">64 / 86</div>
+									<img src="imagenes/65prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">65 / 86</div>
+									<img src="imagenes/66prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">66 / 86</div>
+									<img src="imagenes/67prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">67 / 86</div>
+									<img src="imagenes/68prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">68 / 86</div>
+									<img src="imagenes/69prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">69 / 86</div>
+									<img src="imagenes/70prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">70 / 86</div>
+									<img src="imagenes/71prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">71 / 86</div>
+									<img src="imagenes/72prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">72 / 86</div>
+									<img src="imagenes/73prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">73 / 86</div>
+									<img src="imagenes/74prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">74 / 86</div>
+									<img src="imagenes/75prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">75 / 86</div>
+									<img src="imagenes/76prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">76 / 86</div>
+									<img src="imagenes/77prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">77 / 86</div>
+									<img src="imagenes/78prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">78 / 86</div>
+									<img src="imagenes/79prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">79 / 86</div>
+									<img src="imagenes/80prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">80 / 86</div>
+									<img src="imagenes/81prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">81 / 86</div>
+									<img src="imagenes/82prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">82 / 86</div>
+									<img src="imagenes/83prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">83 / 86</div>
+									<img src="imagenes/84prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">84 / 86</div>
+									<img src="imagenes/85prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">85 / 86</div>
+									<img src="imagenes/86prob.png" >
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">86 / 86</div>
+									<img src="imagenes/87prob.png" >
+								</div>
+
+
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+								<div class="caption-container">
+									<p id="caption"></p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-lg-2">
+						<div id="calendario" class="calendar"></div>
+						<script type="text/javascript">
+							$(function(){
+								$("#calendario").datepicker();
+							});
+						</script>
+						<br />
+						<a target="_blank" href="http://www.ulpgc.es">
+							<img src="../../imagenes/ulpgc.png" class="horizontal-image"/></a>
+						<br />
+						<a target="_blank" href="https://get.adobe.com/es/reader/">
+							<img src="../../imagenes/get_adobe_reader.gif" class="horizontal-image"/></a>
+						<br />
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<div class="col-lg-12 footer">
+			<div class="col-lg-3">
+				<p>© 2017 Ángel Plaza de la Hoz</p>
+			</div>
+			<div class="col-lg-9 footer-navbar">
+				<a href="../../en_index.html">Home</a> |
+				<a href="../../teaching.html">Teaching</a> |
+				<a href="../../research.html">Research</a> |
+				<a href="../../links.html">Links</a> |
+				<a href="../../contact.html">Contact</a>
+			</div>
+		</div>
+		<!-- Footer -->
+	</body>
+</html>
