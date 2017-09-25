@@ -1,0 +1,452 @@
+/***********************************************/
+/* Navigation Bar                              */
+/***********************************************/
+#masthead{
+	border-bottom: 1px solid #cccccc;
+	width: 100%;
+	background: rgba(212,228,239,1);
+	background: -moz-linear-gradient(top, rgba(212,228,239,1) 50%, rgba(88,130,250,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(50%, rgba(212,228,239,1)), color-stop(100%, rgba(88,130,250,1)));
+	background: -webkit-linear-gradient(top, rgba(212,228,239,1) 50%, rgba(88,130,250,1) 100%);
+	background: -o-linear-gradient(top, rgba(212,228,239,1) 50%, rgba(88,130,250,1) 100%);
+	background: -ms-linear-gradient(top, rgba(212,228,239,1) 50%, rgba(88,130,250,1) 100%);
+	background: linear-gradient(to bottom, rgba(212,228,239,1) 50%, rgba(88,130,250,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#5882fa', GradientType=0 );}
+	
+.navbar {
+	padding-top: 15px;
+	font-size: 1.2em;
+	letter-spacing: 5px;
+	font-family: "Droid Sans", Helvetica, Arial, sans-serif;}
+
+.navbar .navbar-toggle {
+    border-color: #0B0B61;}
+
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar .navbar-toggle .icon-bar {
+  background-color: #0B0B61;
+}
+
+.navbar-nav > li > a {
+	font-weight: bold;}
+  
+.navbar-nav  li a:hover {
+	color: #0B3861 !important;
+	background-color: transparent  !important ;}
+
+.nav-text{
+	padding-top: 35px;}
+
+/************************************************/
+/* Footer                                       */
+/************************************************/
+.footer{
+	background-color: #5882FA;
+	width: 100%;
+	font-weight: bold;}
+
+.footer-navbar{
+	text-align: right;}
+
+/************************************************/
+/* Body                                         */
+/************************************************/
+.calendar{
+margin-left: -2.3px;
+padding-top: 0.2em}
+
+.row {
+	margin: 5px;}
+	
+.text {
+	text-align: justify;}
+ 
+ .center{
+	text-align: center;}
+  
+ .horizontal-image{
+	max-height: 100%;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;}
+  
+.side-background{
+	background-color: #E8ECF4;
+	min-height: 350px;}
+
+body{
+	font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+	color: #333333;
+	margin: 0px;
+	padding: 0px;}
+
+	
+a{
+	color: #006699 !important;}
+
+a:hover{
+	color: #006699;
+	text-decoration: underline;}
+	
+.index_image{
+border-radius: 8px;
+margin-left: -16px;}
+
+.contact_text{
+font-size: 1.25em;}
+/************************************************/
+/* Docencia, Investigacion and Enlaces pages    */
+/************************************************/
+  
+ .docencia {
+	width: 100%;
+	height: 50px;}
+  
+ .investigacion {
+	width: 100%;
+	height: 150px;}
+  
+.image_text{
+	position: absolute;
+	color: #006699;
+	text-align: center ;
+	top: -10px;
+	width: 93%;
+	font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+	font-weight: bold;}
+	
+.inv_img_text{
+	position: absolute;
+	color: #006699;
+	text-align: center ;
+	top: 38px;
+	width: 90%;
+	font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+	font-weight: bold;}
+	
+.large{
+	top: 23px;}
+
+.left-text{
+	text-align: left ;
+	left: 30px;
+	top: -7px;}
+
+.right-text{
+	text-align: right;
+	right: 30px;
+	top: -7px;}
+
+.blue_block{
+	background: #EFEFFB;}
+
+.gray_block{
+	background: #F2F2F2;}
+
+.enlaces{
+	width: 100%;
+	height: 30px;}
+
+.icons{
+	width: 25px;
+	height: 35px;}
+	
+.list{
+	width: 95%;}
+.indented{
+	margin-left: 30px;}
+	
+.indented-2{
+	margin-left: 80px;}
+	
+.indented-inv{
+	margin-right: 30px;
+	margin-left: -10px;}
+	
+.title{
+	color: #006699;
+	font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+	font-weight: bold;}
+	
+.blue_text{
+color: #006699;}
+
+h4{
+color: #006699 !important;}
+
+/* GALERIA */
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
+div.desc {
+    padding: 10px;
+	background-color: #A9BCF5;
+    text-align: center;
+    font-size: 10.5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 8px 7px;
+    float: left;
+    width: 33%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+    padding: 0px 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white !important;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+    width:50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+  
+/************************************************/
+/* Contact Form                                 */
+/************************************************/
+
+form {
+	width: 95%;
+	background: rgba(0,0,0,0.04);
+	border: 1px solid #E1E1E1;
+	-webkit-box-shadow: 0 0 10px #DADADA;
+	padding: 5px 45px;}
+
+.form-div {
+	left: 5px;}
+
+input{
+    width: 80%;
+	height: 30px;
+    border-radius: 3px;
+    border: solid 1px #b6c7cb;}
+
+textarea{
+	border-radius: 3px;
+    border: solid 1px #b6c7cb;
+	width: 85%;}
+
+label {
+	font-size: 1.2em;}
+
+#submit_button{
+	width: 109px ;
+	height: 34px;
+	border-radius: 3px;
+	background-color: #86c5fa;
+	box-shadow: inset 0 2px rgba(255,255,255,.29);
+    border: solid 1px #77a4cb;
+    font-weight: bold;
+    color: #fff;}
+
+/***********************************************/
+/* Others                                      */
+/***********************************************/
+	
+.news{
+	width: 100%;
+	height: 340px;
+	border-radius: 3px;
+	border: 2px solid #77a4cb;
+	background-color:  #EFEFFB;
+	padding-right: 0px;
+}
+
+#sectionLinks{
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 1px solid #cccccc;
+	font-size: 90%;
+}
+
+#sectionLinks h3{
+	padding: 0px 0px 2px 10px;
+}
+
+#sectionLinks a {
+	display: block;
+	border-top: 1px solid #cccccc;
+	padding: 2px 0px 2px 10px;
+}
+
+#sectionLinks a:hover{
+	background-color: #dddddd;
+}
+
+#navBar ul a:link, #navBar ul a:visited {
+	display: block;
+	font-size: 1.3em;
+	color: #333333 !important;
+	text-decoration: none;}
+#navBar ul {
+	list-style: none; 
+	margin: 0; 
+	padding: 0;}
+#navBar .title {
+	/*color: #0B3861 !important;*/
+}
+
+/* hack to fix IE/Win's broken rendering of block-level anchors in lists */
+#navBar li {border-bottom: 1px solid #EEE;}
+
+/* fix for browsers that don't need the hack */
+html>body #navBar li {border-bottom: none;}
+

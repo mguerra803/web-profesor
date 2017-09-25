@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ángel Plaza de la Hoz</title>
+		<link rel="icon" href="imagenes/icono_dma.png">
+		
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<link rel="stylesheet" href="css/redmond/jquery-ui-1.8.9.custom.css" type="text/css" />
+		<link rel="stylesheet" href="estilos.css" type="text/css" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="js/jquery-ui-en.js"></script>
+		<script type="text/javascript" src="js/funciones.js"></script>
+	</head>
+	 
+	<body>
+		<!-- Barra de navegación -->
+		<div id="masthead">
+			<nav class="navbar">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						
+						<div class="col-lg-12">
+							<h3>ÁNGEL PLAZA DE LA HOZ</h3>
+						</div>
+	
+						<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+						
+					</div>
+					<div id="navbarCollapse" class="collapse navbar-collapse nav-text">
+						<ul class="nav navbar-nav navbar-right ">
+							<li>
+								<a href="en_index.html">Home</a>
+							</li>
+
+							<li>
+								<a href="teaching.html">Teaching</a>
+							</li>
+
+							<li>
+								<a href="research.html">Research</a>
+							</li>
+
+							<li>
+								<a href="links.html">Links</a>
+							</li>
+
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+							
+							<li>
+							<a href="contacto.html"><img src="imagenes/span0002.png" alt="Español" title="Español" border="0" height="17" width="25" /></a>
+							</li>
+							
+							<li>
+							<a href="contact.html"><img src="imagenes/unkg0001.png" alt="English" title="English" border="0" height="17" width="25" /></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- Barra de navegación -->
+		
+		<div class="container-fluid">
+			<section class="row">
+				<div class="col-lg-12 text">
+					<br />
+					<div class="col-lg-2">
+						<iframe class="news" name="novedades" src="novedades.html"> Tu navegador no soporta iframes...
+						</iframe>
+					</div>
+					
+					<div class="col-lg-8">
+						<div class="col-lg-7 form-div">
+							<h4>Contact form</h4>
+							<form action="send.php" method="post">
+								<div>
+									<br>
+									<label for="name">Name:</label>
+									<br />
+									<input type="text" name="name" required/>
+								</div>
+									
+								<div>
+									<br>
+									<label for="email">Email:</label>
+									<br />
+									<input type="email" name="email" required/>
+								</div>
+									
+								<div>
+									<br>
+									<label for="telephone">Telephone:</label>
+									<br />
+									<input type="text" name="telephone" required/>
+								</div>
+									
+								<div>
+									<br>
+									<label for="subject">Subject:</label>
+									<br />
+									<input type="text" name="subject" required/>
+								</div>
+									
+								<div>
+									<br>
+									<label for="message">Message:</label>
+									<br />
+									<textarea cols="60" rows="6" name="message" required></textarea>
+								</div>
+									
+								<div>
+									<br>
+									<input id="submit_button" type="submit" value="Send Email" />
+								</div>
+							</form>
+						</div>
+					
+						<div class="col-lg-5">
+							<h4>Tutoring schedule (course 2016/2017)</h4>
+							<p><b class="blue_text">Wednesday:</b> from 12:00 to 14:00</p>
+							<p>Weber Classroom - Telecommunications Classrooms</p>
+							<br />
+							<h4>Contact information</h4>
+							<p>928458827</p>
+							<p>angel.plaza@ulpgc.es</p>
+							<br />
+							<p>Computer and Mathematics building</p>
+							<p>Department of Mathematics</p>
+							<p>Module 4, Floor 3, Office 39</p>
+							<br />
+							<h4>How to get</h4>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1497.0231695979082!2d-15.452138605169537!3d28.072908362432482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x64299e4d4078258c!2sEdificio+de+Inform%C3%A1tica+y+Matem%C3%A1ticas+-+ULPGC!5e0!3m2!1ses!2ses!4v1487930534803" allowfullscreen="" class="js-google-maps-embed-frame" width="100%" height="235" frameborder="0"></iframe>
+						</div>
+					</div>
+					
+					<div class="col-lg-2">
+						<div id="calendario" class="calendar"></div>
+						<script type="text/javascript">
+							$(function(){
+								$("#calendario").datepicker();
+							});
+						</script>
+						<br />
+						<a target="_blank" href="http://www.ulpgc.es">
+						<img src="imagenes/ulpgc.png" class="horizontal-image"/></a>
+						<br />
+						<a target="_blank" href="https://get.adobe.com/es/reader/">
+						<img src="imagenes/get_adobe_reader.gif" class="horizontal-image"/></a>
+						<br />
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<div class="col-lg-12 footer">
+			<div class="col-lg-3">
+				<p>© 2017 Ángel Plaza de la Hoz</p>
+			</div>
+			<div class="col-lg-9 footer-navbar">
+				<a href="en_index.html">Home</a> |
+				<a href="teaching.html">Teaching</a> |
+				<a href="research.html">Research</a> |
+				<a href="links.html">Links</a> |
+				<a href="contact.html">Contact</a>
+			</div>
+		</div>
+		<!-- Footer -->
+	</body>
+</html>
